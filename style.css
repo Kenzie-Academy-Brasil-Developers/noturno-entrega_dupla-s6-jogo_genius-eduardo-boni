@@ -1,0 +1,99 @@
+.container {
+    height: 97.6vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: sans-serif;
+    color:#fff;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btnGreen {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(73, 197, 73);
+    margin-bottom: 15px;
+    margin-right: 15px;
+    border-radius: 100% 0 0 0;
+}
+
+.btnYellow {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(199, 199, 62);
+    border-radius: 0 0 0 100%;
+}
+
+.btnRed {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(163, 49, 49);
+    margin-bottom: 15px;
+    border-radius: 0 100% 0 0;
+}
+
+.btnBlue {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(57, 57, 179);
+    border-radius: 0 0 100% 0;
+}
+
+.infos {
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+.btnGreen:hover {
+    cursor: pointer;
+    background-color: rgb(54, 247, 54);
+}
+
+.btnYellow:hover {
+    cursor: pointer;
+    background-color: rgb(248, 248, 48);
+}
+
+.btnRed:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
+
+.btnBlue:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 255);
+}
+
+.buttons>button:disabled {
+    cursor: not-allowed;
+}
+
+.buttons>button:active,
+.buttons>button.active {
+    filter: brightness(1.5) !important;
+}
